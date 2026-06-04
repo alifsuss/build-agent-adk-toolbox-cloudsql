@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.log
+# Virtual environments
+.venv/
+# Tool specific
+deploy-toolbox/toolbox
+# Editor/IDE files
+.idea/
+.vscode/
+# Temporary files
+*.tmp
+*.swp
+*.~
+# Test artifacts
+.pytest_cache/
+# Logs directory
+logs/
+
+# Large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.img
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+
+toolbox
+deploy-toolbox/toolbox

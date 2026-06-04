@@ -1,0 +1,24 @@
+2026-06-04T07:04:39.900405896Z INFO "Initialized 1 sources: restaurant-db" 
+2026-06-04T07:04:39.900500369Z INFO "Initialized 0 authServices: " 
+2026-06-04T07:04:39.900543476Z INFO "Using Vertex AI backend for Gemini embedding" "ailive-jakarta-285-10067" "global" 
+2026-06-04T07:04:39.900810013Z INFO "Initialized 1 embeddingModels: gemini-embedding" 
+2026-06-04T07:04:39.900928132Z INFO "Initialized 4 tools: search-menu, get-item-details, search-menu-by-description, add-menu-item" 
+2026-06-04T07:04:39.900974085Z INFO "Initialized 1 toolsets: default" 
+2026-06-04T07:04:39.900990664Z INFO "Initialized 0 prompts: " 
+2026-06-04T07:04:39.901012319Z INFO "Initialized 1 promptsets: default" 
+2026-06-04T07:04:39.901055865Z WARN "wildcard (`*`) allows all origin to access the resource and is not secure. Use it with cautious for public, non-sensitive data, or during local development. Recommended to use `--allowed-origins` flag" 
+2026-06-04T07:04:39.901084484Z WARN "wildcard (`*`) allows all hosts to access the resource and is not secure. Use it with cautious for public, non-sensitive data, or during local development. Recommended to use `--allowed-hosts` flag to prevent DNS rebinding attacks" 
+2026-06-04T07:04:39.90607018Z INFO "Server ready to serve!" 
+2026-06-04T07:05:33.79951307Z INFO "GET /api/toolset => HTTP 200 (324.482µs)" "http://localhost:5000/api/toolset" "GET" "/api/toolset" "127.0.0.1:55196" "localhost:5000" "http" "HTTP/1.1" 0 "curl/8.5.0" "" 200 "0.000324482s" 3138 
+2026-06-04T07:07:17.806496127Z INFO "POST /api/tool/search-menu/invoke => HTTP 200 (629.313333ms)" "http://localhost:5000/api/tool/search-menu/invoke" "POST" "/api/tool/search-menu/invoke" "127.0.0.1:57258" "localhost:5000" "http" "HTTP/1.1" 54 "curl/8.5.0" "" 200 "0.629313333s" 518 
+2026-06-04T07:28:42.368132788Z INFO "POST /mcp/ => HTTP 200 (464.334µs)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39278" "127.0.0.1:5000" "http" "HTTP/1.1" 219 "Python/3.12 aiohttp/3.14.0" "" 200 "0.000464334s" 260 
+2026-06-04T07:28:42.369551263Z INFO "POST /mcp/ => HTTP 202 (162.208µs)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39278" "127.0.0.1:5000" "http" "HTTP/1.1" 71 "Python/3.12 aiohttp/3.14.0" "" 202 "0.000162208s" 0 
+2026-06-04T07:28:42.370810903Z INFO "POST /mcp/ => HTTP 200 (400.804µs)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39278" "127.0.0.1:5000" "http" "HTTP/1.1" 102 "Python/3.12 aiohttp/3.14.0" "" 200 "0.000400804s" 3193 
+2026-06-04T07:28:55.768191226Z INFO "POST /mcp/ => HTTP 200 (243.014µs)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39278" "127.0.0.1:5000" "http" "HTTP/1.1" 102 "Python/3.12 aiohttp/3.14.0" "" 200 "0.000243014s" 3193 
+2026-06-04T07:28:57.86276393Z INFO "POST /mcp/ => HTTP 200 (432.870393ms)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39278" "127.0.0.1:5000" "http" "HTTP/1.1" 181 "Python/3.12 aiohttp/3.14.0" "" 200 "0.432870393s" 902 
+2026-06-04T07:29:45.238012844Z INFO "POST /mcp/ => HTTP 200 (451.821µs)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:53958" "127.0.0.1:5000" "http" "HTTP/1.1" 102 "Python/3.12 aiohttp/3.14.0" "" 200 "0.000451821s" 3193 
+2026-06-04T07:29:48.416374588Z INFO "Successfully embedded %d text parameters using model %s" 1 "gemini-embedding-001" 
+2026-06-04T07:29:49.504905962Z INFO "POST /mcp/ => HTTP 200 (2.632396469s)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:53958" "127.0.0.1:5000" "http" "HTTP/1.1" 198 "Python/3.12 aiohttp/3.14.0" "" 200 "2.632396469s" 2541 
+2026-06-04T07:34:59.541226887Z INFO "POST /mcp/ => HTTP 200 (325.612µs)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39440" "127.0.0.1:5000" "http" "HTTP/1.1" 102 "Python/3.12 aiohttp/3.14.0" "" 200 "0.000325612s" 3193 
+2026-06-04T07:35:03.981167783Z INFO "Successfully embedded %d text parameters using model %s" 1 "gemini-embedding-001" 
+2026-06-04T07:35:05.059173213Z INFO "POST /mcp/ => HTTP 200 (2.502213936s)" "http://127.0.0.1:5000/mcp/" "POST" "/mcp/" "127.0.0.1:39440" "127.0.0.1:5000" "http" "HTTP/1.1" 646 "Python/3.12 aiohttp/3.14.0" "" 200 "2.502213936s" 172 

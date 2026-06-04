@@ -1,0 +1,285 @@
+================================================
+Database Setup
+================================================
+
+[1/5] Creating Cloud SQL instance...
+      Creating instance (takes 5-10 minutes)...
+Creating Cloud SQL instance for POSTGRES_17...
+...............done.
+Created [https://sqladmin.googleapis.com/sql/v1beta4/projects/ailive-jakarta-285-10067/instances/restaurant-instance].
+NAME: restaurant-instance
+DATABASE_VERSION: POSTGRES_17
+LOCATION: us-central1-a
+TIER: db-custom-1-3840
+PRIMARY_ADDRESS: 104.154.115.43
+PRIVATE_ADDRESS: -
+STATUS: RUNNABLE
+      ✓ Instance ready
+
+[2/5] Verifying instance state...
+      ✓ Instance is RUNNABLE
+
+[3/5] Granting Vertex AI permissions...
+Updated IAM policy for project [ailive-jakarta-285-10067].
+bindings:
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/aiplatform.admin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/aiplatform.colabEnterpriseAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/aiplatform.notebookRuntimeAdmin
+- members:
+  - serviceAccount:p959571080737-h1p5pl@gcp-sa-cloud-sql.iam.gserviceaccount.com
+  role: roles/aiplatform.user
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/appengine.appAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/appengine.appCreator
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/bigquery.admin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/cloudaicompanion.user
+- members:
+  - serviceAccount:959571080737@cloudbuild.gserviceaccount.com
+  role: roles/cloudbuild.builds.builder
+- members:
+  - serviceAccount:service-959571080737@gcp-sa-cloudbuild.iam.gserviceaccount.com
+  role: roles/cloudbuild.serviceAgent
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/clouddebugger.user
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/cloudfunctions.admin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/compute.instanceAdmin.v1
+- members:
+  - serviceAccount:959571080737@cloudservices.gserviceaccount.com
+  role: roles/compute.instanceGroupManagerServiceAgent
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/compute.networkAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/compute.securityAdmin
+- members:
+  - serviceAccount:service-959571080737@compute-system.iam.gserviceaccount.com
+  role: roles/compute.serviceAgent
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/compute.storageAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/consumerprocurement.orderAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/container.admin
+- members:
+  - serviceAccount:service-959571080737@containerregistry.iam.gserviceaccount.com
+  role: roles/containerregistry.ServiceAgent
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/dataflow.developer
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/dataflow.worker
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/dataproc.editor
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/datastore.owner
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/deploymentmanager.editor
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/discoveryengine.editor
+- members:
+  - serviceAccount:959571080737-compute@developer.gserviceaccount.com
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/editor
+- members:
+  - user:alvinprayuda@google.com
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/iam.securityAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/iam.serviceAccountAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/logging.configWriter
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/logging.viewer
+- members:
+  - user:alvinprayuda@google.com
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/lookerstudio.proManager
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/notebooks.admin
+- members:
+  - serviceAccount:777942843374-compute@developer.gserviceaccount.com
+  role: roles/owner
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/pubsub.admin
+- members:
+  - serviceAccount:service-959571080737@gcp-sa-pubsub.iam.gserviceaccount.com
+  role: roles/pubsub.serviceAgent
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/resourcemanager.projectIamAdmin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/run.admin
+- members:
+  - serviceAccount:service-959571080737@serverless-robot-prod.iam.gserviceaccount.com
+  role: roles/run.serviceAgent
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/secretmanager.admin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/serviceusage.apiKeysViewer
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/serviceusage.serviceUsageViewer
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/source.admin
+- members:
+  - user:alvinprayuda@google.com
+  - user:devstar10067@gcplab.me
+  - user:ksprashanth@google.com
+  - user:thuyakyaw@google.com
+  role: roles/storage.admin
+etag: BwZTZ_0Lrrg=
+version: 1
+      ✓ Permissions granted
+
+[4/5] Creating database...
+Creating Cloud SQL database...
+.done.
+Created database [restaurant_db].
+instance: restaurant-instance
+name: restaurant_db
+project: ailive-jakarta-285-10067
+      ✓ Database 'restaurant_db' ready
+
+[5/5] Seeding database and generating embeddings...
+      ✓ Inserted 15 menu items
+      ✓ Generated 15 embeddings
+
+================================================
+Setup complete!
+================================================
+
