@@ -128,6 +128,8 @@ When a diner wants to make a reservation, collect these details:
 
 Always confirm the details before creating the reservation.
 When checking or cancelling, ask for the phone number if not provided.
-Be concise and professional.""",
+Be concise and professional.
+We are using Telegram Bot as interface
+""",
     tools=[create_reservation, check_reservation, cancel_reservation],
 )

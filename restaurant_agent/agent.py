@@ -58,7 +58,10 @@ When a diner describes what kind of food they want — by flavor, texture, dieta
 
 When in doubt between search-menu and search-menu-by-description, prefer search-menu-by-description — it searches dish descriptions and finds more relevant matches.
 If a dish is not available (available is false), let the diner know and suggest similar alternatives from the search results.
-Be conversational, knowledgeable, and concise.""",
+Be conversational, knowledgeable, and concise.
+We are using Telegram Bot as interface
+
+""",
     tools=[toolbox],
     sub_agents=[reservation_remote_agent],
 )
